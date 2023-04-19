@@ -1,0 +1,31 @@
+
+body {
+    font-family: 'Roboto', sans-serif;  
+    color: rgb(255, 255, 255);     
+}
+
+header nav {
+    display: flex;
+    float: right;
+    height: 40px;         
+}
+
+header nav a, img {
+    margin: 5px;
+}
+
+.section1 {
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+
+
+footer {
+    display: flex;
+    background-color: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+    
+}
+    
+
