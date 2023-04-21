@@ -1,31 +1,153 @@
 
 body {
-    font-family: 'Roboto', sans-serif;  
-    color: rgb(255, 255, 255);     
+    width: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif; 
+    background-color: rgb(0, 0, 0);    
 }
+
+/* header y barra de navegacion*/
 
 header nav {
     display: flex;
-    float: right;
+    justify-content: flex-end;
     height: 40px;         
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Arya', sans-serif;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 header nav a, img {
     margin: 5px;
 }
 
-.section1 {
-    display: block;
-    justify-items: center;
-    align-items: center;
+/* desplegable de los 9 puntos */
+
+
+
+
+/* estilo main, logo y buscadores */
+
+main {    
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
 }
 
+.section1 {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 50%;
+}
+
+.section2 {
+    border-style: solid;
+    border-color: rgb(92, 92, 92);
+    border-width: 2px;
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;    
+}
+
+/* agregar las imagenes en la barra de busqueda*/ 
+
+#input-search {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.section3 {
+    margin: 20px;
+}
+#input-search {
+    border-style: hidden;
+    width: 70%;
+}
+
+#search {
+    height: 40px;
+    margin: 10px;
+    background-color: rgb(148, 29, 108);
+}
+
+#lucky {
+    margin: 10px;
+    height: 40px;
+    background-color: rgb(69, 184, 34);
+}
+
+#search:hover {
+    background-color: rgb(182, 184, 34);
+}
+
+#lucky:hover {
+    background-color: rgb(182, 184, 34);
+
+}
+
+main p {
+    font-size: 20px;
+    
+}
+
+/* diseño footer */
 
 footer {
-    display: flex;
-    background-color: rgb(201, 201, 201);
-    color: rgb(0, 0, 0);
-    
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    font-family: 'Arya', sans-serif;
+    color: rgb(255, 255, 255); 
+    display: flex; 
+    flex-direction: column;
+    margin-top: 50px;         
 }
-    
 
+footer section h2{
+    padding-left: 15px;
+    font-weight: lighter;
+}
+
+.footer-link {
+    border-style: solid none none none;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.footer-link div {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.footer-link div a {    
+    margin: 0px 15px;
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* agregar las lineas al pasar el cursor por los links */
+
+.footer-link a:hover {
+    text-decoration-line: underline;
+}
