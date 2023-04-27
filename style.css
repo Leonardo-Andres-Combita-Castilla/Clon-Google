@@ -1,9 +1,11 @@
 
+
 body {
     width: 100%;
     margin: 0px;
     font-family: 'Roboto', sans-serif; 
-    background-color: rgb(0, 0, 0);    
+    background-color: rgb(0, 0, 0);  
+    cursor: not-allowed;      
 }
 
 /* header y barra de navegacion*/
@@ -30,7 +32,7 @@ header nav a:hover {
 }
 
 header nav a, img {
-    margin: 5px;
+    padding: 5px;
 }
 
 /* desplegable de los 9 puntos */
@@ -53,16 +55,19 @@ header nav a, img {
     right: 0; 
 }
 
-.desplegable:hover .contenidodesplegable {
-   display: block;
-   columns: 3;
-}
-
-.contenidodesplegable a img {
+.contenidodesplegable div a img {
     width: 50px;
+    height: 40px;
 }
 
+.desplegable:hover .contenidodesplegable {
+    display: flex;  
+    background-color: rgb(0, 0, 0);   
+}
 
+.contenidodesplegable div a img:hover {
+    background-color: rgb(69, 184, 34);
+}
 
 /* estilo main, logo y buscadores */
 
@@ -107,6 +112,10 @@ main {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     width: 100%;
+    border-style: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
 .section3 {
@@ -116,16 +125,14 @@ main {
     justify-content: center;
 }
 
-#input-search {
-    border-style: hidden;
-    width: 70%;
-}
 
 #search {
     width: 12%;
     margin: 5px 10px;
     height: 40px;
     background-color: rgb(148, 29, 108);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
 #lucky {
@@ -133,6 +140,8 @@ main {
     margin: 5px 10px;
     height: 40px;
     background-color: rgb(69, 184, 34);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
 #search:hover {
@@ -174,6 +183,7 @@ footer section h2{
 }
 
 .footer-link {
+    width: 100%;
     border-style: solid none none none;
     border-color: rgb(155, 155, 155);
     border-width: 1px;
@@ -188,8 +198,8 @@ footer section h2{
     justify-content: flex-start;
 }
 
-.footer-link div a {    
-    margin: 0px 15px;
+.footer-link div a {  
+    padding: 0 20px;
     display: flex;
     text-decoration: none;
     color: rgb(155, 155, 155);
